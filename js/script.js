@@ -97,7 +97,11 @@ class SnakeGame {
   }
 
   handleKeydown(e) {
-    this.moveSound.play();
+    try {
+      this.moveSound.play();
+    } catch (e) {
+      console.log(e);
+    }
     switch (e.key) {
       case "ArrowUp":
         this.inputDirection = { x: 0, y: -1 };
