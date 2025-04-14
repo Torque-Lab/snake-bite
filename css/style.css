@@ -25,11 +25,24 @@
     
 }
 
-.head{
-    background-color: red;
-
-}
-.food{
-    background-color: purple;
-
-}
+.head {
+    background: linear-gradient(135deg, #ff4e50, #f9d423); /* Smoother red-yellow blend */
+    box-shadow: 0 0 1vmin rgba(255, 0, 0, 0.5); /* Soft glow */
+    border-radius: 50%;
+    border: 0.3vmin solid rgba(255, 255, 255, 0.6);
+  }
+  
+  .snake {
+    background-color: #222;
+    border: 0.3vmin solid #eee;
+    border-radius: 14px;
+    box-shadow: inset 0 0 0.5vmin rgba(255, 255, 255, 0.1);
+  }
+  
+  .food {
+    background: radial-gradient(circle, #0609c7, #020657); /* Dimensional blue */
+    border: 0.3vmin solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 0.8vmin rgba(6, 9, 199, 0.6);
+  }
+  
